@@ -1,0 +1,48 @@
+nmap -sV 127.0.0.1
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-06-14 23:24 +0530
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00051s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+1042/tcp open  afrog?
+1043/tcp open  ssl/boinc?
+3306/tcp open  mysql         MySQL 8.0.44
+7778/tcp open  interwise?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1042-TCP:V=7.99%I=7%D=6/14%Time=6A2EEAD8%P=i686-pc-windows-windows%
+SF:r(GetRequest,2AE,"HTTP/1\.1\x20404\x20Not\x20Found\r\nVary:\x20Origin\r
+SF:\nContent-Security-Policy:\x20default-src\x20'none'\r\nCross-Origin-Res
+SF:ource-Policy:\x20cross-origin\r\nOrigin-Agent-Cluster:\x20\?1\r\nReferr
+SF:er-Policy:\x20no-referrer\r\nStrict-Transport-Security:\x20max-age=3153
+SF:6000;\x20includeSubDomains\r\nX-Content-Type-Options:\x20nosniff\r\nX-D
+SF:NS-Prefetch-Control:\x20off\r\nX-Download-Options:\x20noopen\r\nX-Frame
+SF:-Options:\x20SAMEORIGIN\r\nX-Permitted-Cross-Domain-Policies:\x20none\r
+SF:\nX-XSS-Protection:\x200\r\nContent-Type:\x20text/html;\x20charset=utf-
+SF:8\r\nContent-Length:\x20139\r\nDate:\x20Sun,\x2014\x20Jun\x202026\x2017
+SF::54:32\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html>\n<html\
+SF:x20lang=\"en\">\n<head>\n<meta\x20charset=\"utf-8\">\n<title>Error</tit
+SF:le>\n</head>\n<body>\n<pre>Cannot\x20GET\x20/</pre>\n</body>\n</html>\n
+SF:")%r(HTTPOptions,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20Orig
+SF:in,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Methods:\
+SF:x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\x20S
+SF:un,\x2014\x20Jun\x202026\x2017:54:32\x20GMT\r\nConnection:\x20close\r\n
+SF:\r\n")%r(RTSPRequest,D2,"HTTP/1\.1\x20204\x20No\x20Content\r\nVary:\x20
+SF:Origin,\x20Access-Control-Request-Headers\r\nAccess-Control-Allow-Metho
+SF:ds:\x20GET,HEAD,PUT,PATCH,POST,DELETE\r\nContent-Length:\x200\r\nDate:\
+SF:x20Sun,\x2014\x20Jun\x202026\x2017:54:32\x20GMT\r\nConnection:\x20close
+SF:\r\n\r\n")%r(RPCCheck,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnect
+SF:ion:\x20close\r\n\r\n")%r(DNSVersionBindReqTCP,2F,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSStatusRequestTCP,
+SF:2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n"
+SF:)%r(Help,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
+SF:\r\n\r\n")%r(SSLSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n")%r(TerminalServerCookie,2F,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(TLSSessionReq,2
+SF:F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.75 seconds
